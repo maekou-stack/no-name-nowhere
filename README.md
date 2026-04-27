@@ -7,6 +7,8 @@
  for its own reason. But we rise again."
 ```
 
+![Hero — CHERRY.B](./lookbooks/cherry-b-hero-portrait.jpg)
+
 ---
 
 ## 概要 / Concept
@@ -21,17 +23,23 @@ nameless makers, placeless origins, distinct intent.
 
 ## 哲学 / Philosophy
 
-- **匿名性**: 作品はクラフト本位。製作者の名前より、素材と意図が語る。
-- **再生**: シルク・着物・デニム — 一度命を終えた素材に二度目を与える。
-- **境界の曖昧化**: 伝統工芸 / ストリート / ラグジュアリー、その境界線で立つ。
+- **匿名性 / Anonymity** — 作品はクラフト本位。製作者の名前より、素材と意図が語る。
+- **再生 / Rebirth** — シルク・着物・デニム — 一度命を終えた素材に二度目を与える。
+- **境界の曖昧化 / Liminality** — 伝統工芸 / ストリート / ラグジュアリー、その境界線で立つ。
 
 ---
 
 ## コレクション / Collections
 
 ### CHERRY.B
-桜、儚さ、再生のモチーフ。
-Cherry blossoms, ephemerality, return.
+桜、儚さ、再生。デニムに咲く花。
+Cherry blossoms, ephemerality, rebirth — flowers blooming on denim.
+
+![CHERRY.B detail](./lookbooks/cherry-b-detail-back.jpg)
+
+![CHERRY.B atelier](./lookbooks/cherry-b-atelier.jpg)
+
+![CHERRY.B styling](./lookbooks/cherry-b-through-window.jpg)
 
 ### KIMONO UPCYCLING
 ヴィンテージ着物・シルクからの再構築。
@@ -40,6 +48,15 @@ Reconstruction from vintage kimono and silk.
 ### PATCHWORKS DENIM
 継ぎ接ぎの記憶、デニムの第二人生。
 Patched memory, denim's second life.
+
+---
+
+## 倖 / The Mark
+
+すべての作品の back pocket に刺繍される、創設者の漢字一文字。
+A single kanji embroidered on every back pocket — the founder's mark.
+
+![Koh kanji pockets](./lookbooks/koh-kanji-pockets.jpg)
 
 ---
 
