@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Koh Maeda — bilingual creator</title>
+<meta name="description" content="Koh Maeda — bilingual creator based in San Francisco. Multi-media × fashion × AI. Founder of K-Studio and no_name.nowhere." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F2EE;
+    --ink: #1A1A1A;
+    --muted: #888888;
+    --accent: #E8A8B8;
+    --rule: #DCD7D0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 120px 12vw 160px;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: clamp(56px, 9vw, 120px);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 28px;
+  }
+
+  .hero .tagline {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  .hero .tagline .muted {
+    color: var(--muted);
+  }
+
+  /* SECTION LABEL */
+  .label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 36px;
+  }
+
+  /* SECTION SPACING */
+  section { margin-top: 140px; }
+
+  /* WORKS */
+  .works ol {
+    list-style: none;
+    counter-reset: work;
+  }
+
+  .works li {
+    counter-increment: work;
+    font-size: 21px;
+    line-height: 2;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    align-items: baseline;
+    border-top: 1px solid var(--rule);
+    padding: 14px 0;
+  }
+
+  .works li:last-child { border-bottom: 1px solid var(--rule); }
+
+  .works li::before {
+    content: counter(work, decimal-leading-zero);
+    color: var(--accent);
+    font-feature-settings: "tnum";
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  .works .work-title { font-weight: 400; }
+  .works .work-title em {
+    font-style: normal;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  /* QUOTE */
+  .quote {
+    margin-top: 140px;
+    padding-left: 48px;
+    border-left: 1px solid var(--rule);
+  }
+
+  .quote p {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(24px, 3.5vw, 36px);
+    line-height: 1.4;
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  .quote .attribution {
+    margin-top: 22px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* ABOUT */
+  .about p {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.75;
+    color: var(--ink);
+  }
+
+  .about p + p { margin-top: 22px; }
+
+  /* PHILOSOPHY */
+  .philosophy h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  .philosophy p {
+    max-width: 560px;
+    color: var(--ink);
+  }
+
+  /* PROCESS */
+  .process .step {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 32px;
+    padding: 18px 0;
+    border-top: 1px solid var(--rule);
+    align-items: baseline;
+  }
+
+  .process .step:last-child { border-bottom: 1px solid var(--rule); }
+
+  .process .step-name {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .process .step-desc {
+    font-size: 17px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  /* CLIENTS / ARCHIVE */
+  .clients ul,
+  .archive ul {
+    list-style: none;
+  }
+
+  .clients li,
+  .archive li {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 24px;
+    padding: 14px 0;
+    border-top: 1px solid var(--rule);
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+
+  .clients li:last-child,
+  .archive li:last-child { border-bottom: 1px solid var(--rule); }
+
+  .clients .year,
+  .archive .year {
+    font-feature-settings: "tnum";
+    color: var(--muted);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
+
+  /* INFO / FOOTER */
+  .info ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    font-size: 15px;
+  }
+
+  .info a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 200ms ease, color 200ms ease;
+  }
+
+  .info a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* LET'S CONNECT */
+  .connect {
+    margin-top: 160px;
+    padding-top: 48px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .connect h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  .connect p {
+    max-width: 520px;
+    margin-bottom: 20px;
+    color: var(--ink);
+  }
+
+  .connect a.email {
+    font-size: clamp(24px, 3vw, 32px);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 4px;
+    transition: color 200ms ease, border-color 200ms ease;
+  }
+
+  .connect a.email:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* COPYRIGHT */
+  .copyright {
+    margin-top: 100px;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 720px) {
+    main { padding: 80px 8vw 120px; }
+    section { margin-top: 96px; }
+    .works li { grid-template-columns: 44px 1fr; font-size: 18px; }
+    .process .step { grid-template-columns: 1fr; gap: 8px; }
+    .clients li, .archive li { grid-template-columns: 64px 1fr; }
+    .quote { padding-left: 24px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <!-- HERO -->
+  <section class="hero" style="margin-top: 0;">
+    <h1>Koh Maeda</h1>
+    <p class="tagline">
+      bilingual creator based in san francisco<br>
+      <span class="muted">multi-media · fashion · ai</span>
+    </p>
+  </section>
+
+  <!-- SELECTED WORKS -->
+  <section class="works">
+    <p class="label">Selected Works</p>
+    <ol>
+      <li><span class="work-title">K-Studio <em>— Bilingual Media Platform</em></span></li>
+      <li><span class="work-title">no_name.nowhere <em>— Brand Archive</em></span></li>
+      <li><span class="work-title">CHERRY.B <em>— Cherry Blossom Denim Collection</em></span></li>
+      <li><span class="work-title">KOH'S AI Company <em>— Personal Workflow System</em></span></li>
+      <li><span class="work-title">KIMONO UPCYCLING <em>— Vintage Silk Reconstruction</em></span></li>
+      <li><span class="work-title">PATCHWORKS DENIM <em>— Second Life Series</em></span></li>
+    </ol>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote">
+    <p>"Each blossom, like each human, falls at its own pace,<br>
+       for its own reason. But we rise again."</p>
+    <p class="attribution">— koh maeda</p>
+  </section>
+
+  <!-- INFO -->
+  <section class="info">
+    <p class="label">Info</p>
+    <ul>
+      <li><a href="https://kohmaeda.com">about</a></li>
+      <li><a href="https://instagram.com/no_name.nowhere">instagram</a></li>
+      <li><a href="https://github.com/maekou-stack">github</a></li>
+      <li><a href="mailto:maekouthanks0904@gmail.com">email</a></li>
+    </ul>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <p class="label">About</p>
+    <p>Koh Maeda is a bilingual creator and designer working at the intersection of media, fashion, and AI. Based in San Francisco, he builds across formats — broadcast, brand, and digital — fluent in both English and Japanese.</p>
+    <p>His work explores the dialogue between tradition and innovation, rooted in Japanese craft sensibility and reimagined for a contemporary global context.</p>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy">
+    <p class="label">Philosophy</p>
+    <h2>made with hands.<br>think with heart.</h2>
+    <p>In a world of speed and mass production, the work chooses to be made slowly and intentionally — to honor materials, to respect stories, and to leave space for meaning.</p>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <p class="label">Process</p>
+    <div class="step">
+      <span class="step-name">Research</span>
+      <span class="step-desc">Exploring culture, materials, and personal narratives.</span>
+    </div>
+    <div class="step">
+      <span class="step-name">Concept</span>
+      <span class="step-desc">Building a clear view, with emotion and concrete depth.</span>
+    </div>
+    <div class="step">
+      <span class="step-name">Experiment</span>
+      <span class="step-desc">Prototyping across mediums — cloth, code, frame, screen.</span>
+    </div>
+    <div class="step">
+      <span class="step-name">Craft</span>
+      <span class="step-desc">Crafting with intention, clarity, and care.</span>
+    </div>
+    <div class="step">
+      <span class="step-name">Share</span>
+      <span class="step-desc">Bringing the work into the world to connect and resonate.</span>
+    </div>
+  </section>
+
+  <!-- SELECTED CLIENTS / EXPERIENCE -->
+  <section class="clients">
+    <p class="label">Selected Experience</p>
+    <ul>
+      <li><span class="year">2025–</span><span>K-Studio — Founder, Social Media Manager</span></li>
+      <li><span class="year">2025</span><span>ArtU Esports — Interviewer & Cameraman</span></li>
+      <li><span class="year">2024</span><span>Academy of Art University — Show Producer & Reporter</span></li>
+      <li><span class="year">2023</span><span>NCAA Baseball, PacWest — Pitcher of the Week</span></li>
+    </ul>
+  </section>
+
+  <!-- LET'S CONNECT -->
+  <section class="connect">
+    <h2>Let's Connect</h2>
+    <p>Open to new collaborations and conversations. Feel free to reach out.</p>
+    <a class="email" href="mailto:maekouthanks0904@gmail.com">maekouthanks0904@gmail.com</a>
+  </section>
+
+  <p class="copyright">© 2024–2026 Koh Maeda · All works original.</p>
+
+</main>
+</body>
+</html>
